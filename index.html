@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IanLain - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">IanLain</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#interests" class="nav-link">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="images/profile.jpg" alt="IanLain Profile" class="profile-image">
+                    <div class="profile-glow"></div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="nickname">IanLain</span>
+                        <span class="full-name">Ian Connected</span>
+                    </h1>
+                    <p class="hero-subtitle">Systems & Computer Engineering Student</p>
+                    <p class="hero-description">Passionate about Computer Science, Mathematics & Astronomy</p>
+                    <div class="social-links">
+                        <a href="https://github.com/IANLAIN" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ian_connected/" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm a Systems and Computer Engineering student at the Universidad Tecnológica de Pereira, Colombia. 
+                        My journey in technology is driven by an insatiable curiosity about how computational systems work 
+                        and how they can be used to solve complex problems.
+                    </p>
+                    <p class="about-paragraph">
+                        Based in the beautiful coffee region of Colombia, I combine my technical studies with a deep 
+                        appreciation for the mathematical foundations that underpin modern computing. My passion extends 
+                        beyond Earth's boundaries into the vast realm of astronomy and space sciences.
+                    </p>
+                    <div class="education">
+                        <h3 class="education-title">Education</h3>
+                        <div class="education-item">
+                            <h4>Systems & Computer Engineering</h4>
+                            <p>Universidad Tecnológica de Pereira, Colombia</p>
+                            <span class="education-status">Current Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2 class="section-title">Interests & Passions</h2>
+            <div class="interests-grid">
+                <div class="interests-row top">
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="interest-title">Computer Science</h3>
+                        <p class="interest-description">
+                            Exploring algorithms, data structures, software engineering, and emerging technologies 
+                            that shape our digital future.
+                        </p>
+                    </div>
+                </div>
+                <div class="interests-row bottom">
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3 class="interest-title">Mathematics</h3>
+                        <p class="interest-description">
+                            Fascinated by mathematical concepts, from discrete mathematics to calculus, 
+                            and their applications in computational problem-solving.
+                        </p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h3 class="interest-title">Linux</h3>
+                        <p class="interest-description">
+                            Passionate about open-source systems, command-line mastery, and the power 
+                            of Linux in development and system administration.
+                        </p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="interest-title">Astronomy</h3>
+                        <p class="interest-description">
+                            Captivated by the cosmos, celestial mechanics, and the intersection of 
+                            computational science with space exploration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    Interested in collaborating on projects, discussing technology, or just connecting? 
+                    Feel free to reach out through my social channels.
+                </p>
+                <div class="contact-links">
+                    <a href="https://github.com/IANLAIN" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/ian_connected/" target="_blank" class="contact-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                &copy; 2025 IanLain. Crafted with passion for technology and the cosmos.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
