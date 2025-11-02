@@ -151,6 +151,37 @@ body {
     transition: 0.3s;
 }
 
+/* Language Selector */
+.language-selector {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.lang-btn {
+    padding: 0.4rem 0.8rem;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid var(--secondary-blue);
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: rgba(59, 130, 246, 0.2);
+    color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+.lang-btn.active {
+    background: var(--secondary-blue);
+    color: white;
+    border-color: var(--accent-blue);
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -159,6 +190,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    background-color: var(--dark-bg);
 }
 
 .hero-background {
@@ -171,7 +203,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -2;
+    background-attachment: fixed;
+    z-index: 0;
 }
 
 .banner-overlay {
@@ -182,18 +215,19 @@ body {
     height: 100%;
     background: linear-gradient(
         135deg,
-        rgba(15, 23, 42, 0.8) 0%,
-        rgba(30, 58, 138, 0.6) 50%,
+        rgba(15, 23, 42, 0.85) 0%,
+        rgba(30, 58, 138, 0.7) 50%,
         rgba(15, 23, 42, 0.9) 100%
     );
-    z-index: -1;
+    z-index: 1;
 }
 
 .hero-content {
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     max-width: 1200px;
     padding: 0 2rem;
+    position: relative;
 }
 
 .profile-container {
@@ -564,6 +598,11 @@ body {
 
     .nav-item {
         margin: 1rem 0;
+    }
+
+    .language-selector {
+        margin-left: 0;
+        margin-top: 1rem;
     }
 
     .nickname {

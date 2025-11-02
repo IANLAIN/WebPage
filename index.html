@@ -17,18 +17,23 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#interests" class="nav-link">Interests</a>
+                    <a href="#interests" class="nav-link" data-i18n="nav.interests">Interests</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
                 </li>
             </ul>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en" title="English">EN</button>
+                <button class="lang-btn" data-lang="es" title="Español">ES</button>
+                <button class="lang-btn" data-lang="fr" title="Français">FR</button>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -53,8 +58,8 @@
                     <h1 class="hero-title">
                         <span class="nickname">IanLain</span>
                     </h1>
-                    <p class="hero-subtitle">Systems & Computer Engineering Student</p>
-                    <p class="hero-description">Passionate about Computer Science, Mathematics & Astronomy</p>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Systems & Computer Engineering Student</p>
+                    <p class="hero-description" data-i18n="hero.description">Passionate about Computer Science, Mathematics & Astronomy</p>
                     <div class="social-links">
                         <a href="https://github.com/IANLAIN" target="_blank" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
@@ -76,25 +81,25 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-paragraph">
+                    <p class="about-paragraph" data-i18n="about.paragraph1">
                         I'm a Systems and Computer Engineering student at the Universidad Tecnológica de Pereira, Colombia. 
                         My journey in technology is driven by an insatiable curiosity about how computational systems work 
                         and how they can be used to solve complex problems.
                     </p>
-                    <p class="about-paragraph">
+                    <p class="about-paragraph" data-i18n="about.paragraph2">
                         Based in the beautiful coffee region of Colombia, I combine my technical studies with a deep 
                         appreciation for the mathematical foundations that underpin modern computing. My passion extends 
                         beyond Earth's boundaries into the vast realm of astronomy and space sciences.
                     </p>
                     <div class="education">
-                        <h3 class="education-title">Education</h3>
+                        <h3 class="education-title" data-i18n="about.education.title">Education</h3>
                         <div class="education-item">
-                            <h4>Systems & Computer Engineering</h4>
-                            <p>Universidad Tecnológica de Pereira, Colombia</p>
-                            <span class="education-status">Current Student</span>
+                            <h4 data-i18n="about.education.degree">Systems & Computer Engineering</h4>
+                            <p data-i18n="about.education.university">Universidad Tecnológica de Pereira, Colombia</p>
+                            <span class="education-status" data-i18n="about.education.status">Current Student</span>
                         </div>
                     </div>
                 </div>
@@ -105,15 +110,15 @@
     <!-- Interests Section -->
     <section id="interests" class="interests">
         <div class="container">
-            <h2 class="section-title">Interests & Passions</h2>
+            <h2 class="section-title" data-i18n="interests.title">Interests & Passions</h2>
             <div class="interests-grid">
                 <div class="interests-row top">
                     <div class="interest-card">
                         <div class="interest-icon">
                             <i class="fas fa-laptop-code"></i>
                         </div>
-                        <h3 class="interest-title">Computer Science</h3>
-                        <p class="interest-description">
+                        <h3 class="interest-title" data-i18n="interests.computerScience.title">Computer Science</h3>
+                        <p class="interest-description" data-i18n="interests.computerScience.description">
                             Exploring algorithms, data structures, software engineering, and emerging technologies 
                             that shape our digital future.
                         </p>
@@ -124,8 +129,8 @@
                         <div class="interest-icon">
                             <i class="fas fa-calculator"></i>
                         </div>
-                        <h3 class="interest-title">Mathematics</h3>
-                        <p class="interest-description">
+                        <h3 class="interest-title" data-i18n="interests.mathematics.title">Mathematics</h3>
+                        <p class="interest-description" data-i18n="interests.mathematics.description">
                             Fascinated by mathematical concepts, from discrete mathematics to calculus, 
                             and their applications in computational problem-solving.
                         </p>
@@ -134,8 +139,8 @@
                         <div class="interest-icon">
                             <i class="fab fa-linux"></i>
                         </div>
-                        <h3 class="interest-title">Linux</h3>
-                        <p class="interest-description">
+                        <h3 class="interest-title" data-i18n="interests.linux.title">Linux</h3>
+                        <p class="interest-description" data-i18n="interests.linux.description">
                             Passionate about open-source systems, command-line mastery, and the power 
                             of Linux in development and system administration.
                         </p>
@@ -144,8 +149,8 @@
                         <div class="interest-icon">
                             <i class="fas fa-rocket"></i>
                         </div>
-                        <h3 class="interest-title">Astronomy</h3>
-                        <p class="interest-description">
+                        <h3 class="interest-title" data-i18n="interests.astronomy.title">Astronomy</h3>
+                        <p class="interest-description" data-i18n="interests.astronomy.description">
                             Captivated by the cosmos, celestial mechanics, and the intersection of 
                             computational science with space exploration.
                         </p>
@@ -158,9 +163,9 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
+            <h2 class="section-title" data-i18n="contact.title">Let's Connect</h2>
             <div class="contact-content">
-                <p class="contact-text">
+                <p class="contact-text" data-i18n="contact.description">
                     Interested in collaborating on projects, discussing technology, or just connecting? 
                     Feel free to reach out through my social channels.
                 </p>
@@ -181,12 +186,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">
+            <p class="footer-text" data-i18n="footer.text">
                 &copy; 2025 IanLain. Crafted with passion for technology and the cosmos.
             </p>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
